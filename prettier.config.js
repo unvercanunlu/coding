@@ -1,7 +1,17 @@
 export default {
-  singleQuote: true,
   semi: true,
-  trailingComma: 'none',
+  trailingComma: "none",
   tabWidth: 2,
-  endOfLine: 'auto'
+  endOfLine: "auto",
+  singleQuote: false,
+  quoteProps: "preserve",
+  jsxSingleQuote: false,
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      options: {
+        singleQuote: false
+      }
+    }
+  ]
 };
